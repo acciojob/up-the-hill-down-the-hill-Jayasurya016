@@ -15,7 +15,7 @@ function aveSpd(upTime, upSpd, downSpd) {
   const total_distance = d_up + d_down;
   const total_time = t_up + t_down;
 
-  // Average speed
+  // Average speed (integer result)
   return total_distance / total_time;
 }
 
@@ -24,4 +24,4 @@ const upTime = parseInt(prompt("Enter upTime (minutes): "));
 const upSpd = parseInt(prompt("Enter upSpd (mph): "));
 const downSpd = parseInt(prompt("Enter downSpd (mph): "));
 
-alert("Average Speed: " + aveSpd(upTime, upSpd, downSpd) + " mph");
+alert(aveSpd(upTime, upSpd, downSpd));
